@@ -24,7 +24,7 @@ HEADER (top part of page)
 .header-style1 .logo-header {
 	display: table;
 	float: left;
-	width: 100px;
+	width: 200px;
 	height: 70px;
 	vertical-align: middle;
 	padding: 0;

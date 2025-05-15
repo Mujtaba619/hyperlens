@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1094.32 274.43">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 188.16px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 54.98px;
+        letter-spacing: .6em;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="TEXT">
+    <g class="cls-3">
+      <text class="cls-1" transform="translate(0 160.41)"><tspan x="0" y="0">HYPER LENS</tspan></text>
+    </g>
+    <g class="cls-3">
+      <text class="cls-2" transform="translate(55.79 236.59)"><tspan x="0" y="0">AI SECURITY FIRM</tspan></text>
+    </g>
+  </g>
+</svg>
