@@ -3336,7 +3336,7 @@ input[type=radio]:checked+label:before {
 	z-index: 9999;
 	overflow: hidden;
 }
-.loading-area h2 img{height: 34px;}
+.loading-area h2 img{height: 134px;}
 
 .loading-box {
 	width: 100%;
