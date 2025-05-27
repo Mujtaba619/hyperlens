@@ -1,0 +1,160 @@
+/* Mega Menu Styles */
+.header-nav .nav > li {
+    position: relative;
+}
+
+/* Mega Menu Container */
+.header-nav .nav > li > .sub-menu.mega-menu {
+    display: none; 
+    position: absolute;
+    left: 0; 
+    top: 100%; 
+    width: 750px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #e0e0e0; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    padding: 20px 25px; 
+    z-index: 1000; 
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px; 
+    border-radius: 0; 
+}
+
+
+.header-nav .nav > li:hover > .sub-menu.mega-menu,
+.header-nav .nav > li:focus-within > .sub-menu.mega-menu { 
+    display: flex;
+}
+
+/* Mega Menu Column */
+.sub-menu.mega-menu > li.mega-menu-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; 
+    position: static;
+    border: none;
+    float: none; 
+    width: auto; 
+    background-color: transparent; 
+}
+
+/* Remove default arrows/styles from .sub-menu > li if they interfere */
+.sub-menu.mega-menu > li.mega-menu-column::before,
+.sub-menu.mega-menu > li.mega-menu-column::after {
+    display: none;
+}
+
+/* Mega Menu Column Title TEXT (the <a> tag itself) */
+.mega-menu-column > a.mega-menu-title {
+    display: block;
+    font-weight: bold;
+    font-size: 15px; 
+    margin-bottom: 12px;
+    text-decoration: none;
+    position: relative;   
+    padding-left: 35px;   
+    line-height: 1.5;     
+    color: #333333;       
+    transition: color 0.2s ease-in-out; 
+}
+
+
+.mega-menu-column-grc > a.mega-menu-title {
+    color: #007bff; 
+}
+
+/* Hover effect for the title TEXT */
+.mega-menu-column > a.mega-menu-title:hover {
+    color: #0056b3; 
+    text-decoration: underline;
+}
+
+/* --- ICON STYLING --- */
+.mega-menu-column > a.mega-menu-title::before {
+    content: ""; 
+    font-family: 'FontAwesome'; 
+    display: inline-block;
+    font-size: 20px;            
+    color: #6c757d;             
+    position: absolute;
+    left: 0px;                  
+    top: 50%;                  
+    transform: translateY(-50%);
+    width: 25px;                
+    text-align: center;         
+    line-height: 1;             
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; 
+
+
+    background-color: transparent;
+    border-radius: 0;
+}
+
+
+.mega-menu-column-grc > a.mega-menu-title::before {
+    content: "\f132"; 
+    color: #007bff;   
+}
+
+.mega-menu-column-risk > a.mega-menu-title::before {
+    content: "\f002"; 
+}
+
+.mega-menu-column-data > a.mega-menu-title::before {
+    content: "\f1c0"; 
+}
+
+/* Hover effect for the ICONS */
+.mega-menu-column > a.mega-menu-title:hover::before {
+    color: #0056b3; }
+
+
+.mega-menu-column-grc > a.mega-menu-title:hover::before {
+    color: #004085; 
+}
+/* --- END ICON STYLING --- */
+
+
+/* Links within each column */
+.mega-menu-column ul.mega-menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 35px; 
+}
+
+.mega-menu-column ul.mega-menu-links li {
+    margin-bottom: 0; 
+    padding: 0; 
+    position: static;
+    border: none;
+    background-color: transparent;
+}
+
+.mega-menu-column ul.mega-menu-links li::before,
+.mega-menu-column ul.mega-menu-links li::after {
+    display: none;
+}
+
+.mega-menu-column ul.mega-menu-links li a {
+    display: block;
+    text-decoration: none;
+    color: #333333; 
+    font-size: 14px;
+    padding: 5px 0; 
+    line-height: 1.4;
+    white-space: normal; 
+}
+
+.mega-menu-column ul.mega-menu-links li a:hover {
+    color: #007bff;
+}
+
+
+
+.header-nav .nav > li:hover > ul.sub-menu:not(.mega-menu) {
+     display: block; 
+}
+
