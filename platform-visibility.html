@@ -31,7 +31,9 @@
     <link rel="stylesheet" href="css/feather.css" ><!-- Feather STYLE SHEET -->
     <link rel="stylesheet" href="css/lc_lightbox.css"><!-- IMAGE POPUP -->  
     <link rel="stylesheet" href="css/swiper-bundle.min.css"><!-- SWIPER SLIDER CSS -->
-    <link rel="stylesheet" href="css/style.css"><!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mega-menu.css"><!-- MAIN STYLE SHEET -->
+<link rel="stylesheet" href="css/mega-menu.css"><!-- MEGA MENU STYLE SHEET -->
 
 </head>
 
@@ -135,92 +137,85 @@
                             </div>
                             <!-- EXTRA Nav END -->
 
-                            <!-- MAIN NAVIGATION -->
-                            <div class="header-nav navbar-collapse collapse d-flex justify-content-center">
-                                <ul class=" nav navbar-nav ">
-                                    <li class="active">
-                                        <a href="javascript:;">Solutions</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="javascript:;">GRC & Compliance</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="grc-regulatory-compliance.html">Regulatory Compliance</a></li>
-                                                    <li><a href="grc-policy-management.html">Policy Management</a></li>
-                                                    <li><a href="grc-audit-readiness.html">Audit Readiness</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">Risk Intelligence</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="risk-ai-assessment.html">AI-Powered Assessment</a></li>
-                                                    <li><a href="risk-cloud-security.html">Cloud Security Posture</a></li>
-                                                    <li><a href="risk-third-party.html">Third-Party Risk</a></li>
-                                                    <li><a href="risk-continuous-monitoring.html">Continuous Monitoring</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">Data Integration</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="data-aggregation.html">Hyper Lens Data Aggregation</a></li>
-                                                    <li><a href="data-api-connectors.html">Cloud API Connectors</a></li>
-                                                    <li><a href="data-prep-for-ai.html">Data Preparation for AI</a></li>
-                                                </ul>
-                                            </li>
+                            <!-- MAIN NAVIGATION -->  
+                    <div class="header-nav navbar-collapse collapse d-flex justify-content-center">  
+                                                <ul class="nav navbar-nav">
+                            <li class="active"> <!-- "Solutions" li - .active class is kept -->
+                                <a href="javascript:;">Solutions</a>
+                                <ul class="sub-menu mega-menu"> <!-- Added .mega-menu class -->
+                                    <li class="mega-menu-column"> <!-- First column -->
+                                        <a href="javascript:;" class="mega-menu-title">GRC & Compliance</a> <!-- Title for the column -->
+                                        <ul class="mega-menu-links"> <!-- Links for this column -->
+                                            <li><a href="grc-regulatory-compliance.html">Regulatory Compliance</a></li>
+                                            <li><a href="grc-policy-management.html">Policy Management</a></li>
+                                            <li><a href="grc-audit-readiness.html">Audit Readiness</a></li>
                                         </ul>
                                     </li>
-
-                                    <li>
-                                        <a href="javascript:;">Platform</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="platform-dashboard.html">The Hyper Lens Dashboard</a></li>
-                                            <li><a href="platform-visibility.html">Real-Time Visibility</a></li>
-                                            <li><a href="platform-analytics.html">Advanced Analytics</a></li>
-                                            <li><a href="platform-alerts.html">Custom Alerts & Reporting</a></li>
-                                            <li><a href="platform-security-view.html">Unified Security View</a></li>
+                                    <li class="mega-menu-column"> <!-- Second column -->
+                                        <a href="javascript:;" class="mega-menu-title">Risk Intelligence</a>
+                                        <ul class="mega-menu-links">
+                                            <li><a href="risk-ai-assessment.html">AI-Powered Assessment</a></li>
+                                            <li><a href="risk-cloud-security.html">Cloud Security Posture</a></li>
+                                            <li><a href="risk-third-party.html">Third-Party Risk</a></li>
+                                            <li><a href="risk-continuous-monitoring.html">Continuous Monitoring</a></li>
                                         </ul>
                                     </li>
-
-                                    <li>
-                                        <a href="javascript:;">Services</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="services-managed-grc.html">Managed GRC & Risk</a></li>
-                                            <li><a href="services-implementation.html">Implementation & Onboarding</a></li>
-                                            <li><a href="services-consulting.html">Expert Consulting</a></li>
-                                            <li><a href="services-support.html">Support & Training</a></li>
+                                    <li class="mega-menu-column"> <!-- Third column -->
+                                        <a href="javascript:;" class="mega-menu-title">Data Integration</a>
+                                        <ul class="mega-menu-links">
+                                            <li><a href="data-aggregation.html">Hyper Lens Data Aggregation</a></li>
+                                            <li><a href="data-api-connectors.html">Cloud API Connectors</a></li>
+                                            <li><a href="data-prep-for-ai.html">Data Preparation for AI</a></li>
                                         </ul>
                                     </li>
-
-                                    <li>
-                                        <a href="javascript:;">Insights</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog / Articles</a></li>
-                                            <li><a href="whitepapers.html">Whitepapers & Ebooks</a></li>
-                                            <li><a href="webinars.html">Webinars & Events</a></li>
-                                            <li><a href="knowledge-base.html">Knowledge Base</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <a href="javascript:;">About</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about-us.html">Our Company</a></li>
-                                            <li><a href="about-vision-technology.html">Our Vision & Technology</a></li>
-                                            <li><a href="why-hyperlens.html">Why Hyper Lens</a></li>
-                                            <li><a href="careers.html">Careers</a></li>
-                                            <li><a href="partners.html">Partners</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                        </ul>
-                                    </li>
-
                                 </ul>
-                            </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- HEADER END -->
+                            </li>
+                            <li>
+                                <a href="javascript:;">Platform</a>
+                                <ul class="sub-menu">
+                                    <li><a href="platform-dashboard.html">The Hyper Lens Dashboard</a></li>
+                                    <li><a href="platform-visibility.html">Real-Time Visibility</a></li>
+                                    <li><a href="platform-analytics.html">Advanced Analytics</a></li>
+                                    <li><a href="platform-alerts.html">Custom Alerts & Reporting</a></li>
+                                    <li><a href="platform-security-view.html">Unified Security View</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="services-managed-grc.html">Managed GRC & Risk</a></li>
+                                    <li><a href="services-implementation.html">Implementation & Onboarding</a></li>
+                                    <li><a href="services-consulting.html">Expert Consulting</a></li>
+                                    <li><a href="services-support.html">Support & Training</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Insights</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">Blog / Articles</a></li>
+                                    <li><a href="whitepapers.html">Whitepapers & Ebooks</a></li>
+                                    <li><a href="webinars.html">Webinars & Events</a></li>
+                                    <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">About</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-us.html">Our Company</a></li>
+                                    <li><a href="about-vision-technology.html">Our Vision & Technology</a></li>
+                                    <li><a href="why-hyperlens.html">Why Hyper Lens</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="partners.html">Partners</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </header>  
+    <!-- HEADER END -->  
         
         <!-- CONTENT START -->
         <div class="page-content">
